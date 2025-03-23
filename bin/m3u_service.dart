@@ -22,6 +22,7 @@ class M3uService {
   void filter() {
     List<M3uGenericEntry> list = [];
     const allowedCategories = ["Vollprogramm", "Spartenprogramm", "Regional", "Jugend", "Nachrichten"];
+    const unAllowCategories = ["Internatinal"];
     List<String> regionalSenders = [];
     for (final entry in playlist) {
 
@@ -39,13 +40,26 @@ class M3uService {
       if (!isAllowedCategory) {
         continue;
       }
-
+      
+      for (final unAllowedCategory in unAllowedCategories) {
+        if (groupTitle.contains(unAllowedCategory)) {
+          isUnAllowedCategory = true;
+        }
+      }
+      if (isUnAllowedCategory) {
+        continue;
+      }
+      
       // filter other languages
       String? tvgName = entry.attributes["tvg-name"];
       if (tvgName == null) {
         continue;
       }
       if (tvgName.contains("(FR)") || tvgName.contains("(EN)")) {
+        continue;
+      }
+
+      if (tvgName.contains("BILD")) {
         continue;
       }
 
