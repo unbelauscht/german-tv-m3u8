@@ -27,8 +27,6 @@ https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master
 https://welt.personalstream.tv/v1/master.m3u8
 #EXTINF:-1 tvg-name="euronews deutsch" tvg-id="euronews.com" group-title="Nachrichten" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/euronews.png",euronews deutsch
 https://rakuten-euronews-5-de.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1 tvg-name="Bild" tvg-id="BILD.de" group-title="Nachrichten;Dokumentationen" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/BildTV.png",Bild
-https://bild.personalstream.tv/v1/master.m3u8
 #EXTINF:-1 tvg-name="ANIXE HD" tvg-id="Anixe.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/anixehd.png",ANIXE HD
 https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
 #EXTINF:-1 tvg-name="Dokusat" tvg-id="Dokusat.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/dokusat.png",Dokusat
