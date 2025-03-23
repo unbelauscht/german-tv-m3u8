@@ -61,7 +61,7 @@ class M3uService {
         continue;
       }
 
-      if (tvgName.contains("BILD")) {
+      if (tvgName.toLowerCase().contains("bild")) {
         continue;
       }
 
