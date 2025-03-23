@@ -22,7 +22,7 @@ class M3uService {
   void filter() {
     List<M3uGenericEntry> list = [];
     const allowedCategories = ["Vollprogramm", "Spartenprogramm", "Regional", "Jugend", "Nachrichten"];
-    const unAllowCategories = ["Internatinal"];
+    const unAllowedCategories = ["Internatinal"];
     List<String> regionalSenders = [];
     for (final entry in playlist) {
 
@@ -32,6 +32,8 @@ class M3uService {
         continue;
       }
       var isAllowedCategory = false;
+      var isUnAllowedCategory = false;
+      
       for (final allowedCategory in allowedCategories) {
         if (groupTitle.contains(allowedCategory)) {
           isAllowedCategory = true;
